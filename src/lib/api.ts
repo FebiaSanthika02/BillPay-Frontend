@@ -1,4 +1,4 @@
-const BASE = (import.meta.env.VITE_API_URL || "https://billpay-backend-production.up.railway.app") + "/api";
+const BASE = "/api";
 
 export interface Transaction {
   id: number;
