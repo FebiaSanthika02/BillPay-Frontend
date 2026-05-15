@@ -426,8 +426,8 @@ export function TransactionSection() {
       ]);
       setSummary(s);
       setTransactions(t);
-    } catch {
-      setError("Tidak dapat terhubung ke backend. Pastikan server berjalan di port 3001.");
+    } catch (err) {
+      setError(`Tidak dapat terhubung ke backend. ${err instanceof Error ? err.message : String(err)}`);
     } finally {
       setLoading(false);
     }
