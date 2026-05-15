@@ -220,7 +220,6 @@ function TransactionModal({
   const isIncome = form.type === "income";
   const accentBg   = isIncome ? "bg-emerald-500" : "bg-rose-500";
   const accentText = isIncome ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400";
-  const accentBorder = isIncome ? "border-emerald-500" : "border-rose-500";
 
   const fieldCls =
     "w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500/15 dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-white dark:placeholder:text-slate-500 dark:focus:border-blue-400 dark:focus:bg-white/[0.07]";
